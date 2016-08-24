@@ -1,0 +1,1 @@
+cmd_/mnt/hgfs/freescale/test_code/timer/module/timer_drv.ko := arm-fsl-linux-gnueabi-ld -EL -r  -T /root/myproject/linux-3.14.38/scripts/module-common.lds --build-id  -o /mnt/hgfs/freescale/test_code/timer/module/timer_drv.ko /mnt/hgfs/freescale/test_code/timer/module/timer_drv.o /mnt/hgfs/freescale/test_code/timer/module/timer_drv.mod.o

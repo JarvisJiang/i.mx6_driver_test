@@ -1,0 +1,13 @@
+gpio-keys{  
+       compatible = "gpio-keys";  
+        home {  
+                label = "HOME Button";  
+                gpios = <&gpio1 22 1>;  
+                linux,code = <102>;  
+        };  
+        enter {  
+                label = "Enter Button";  
+                gpios = <&gpio1 23 1>;  
+                linux,code = <28>;  
+        };     
+	};

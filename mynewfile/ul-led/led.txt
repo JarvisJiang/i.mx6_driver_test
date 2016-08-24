@@ -1,0 +1,16 @@
+1.替换设备树。将设备树放入到u盘中。ul开机进入系统，在命令行输入
+#cd /media/mmcblk1p1
+#cp /media/sda1/imx6ul-14x14-evk.dtb  /media/mmcblk1p1/
+#sync
+#sync
+#sync
+#reboot
+重启之后，使用新的设备树。在命令行输入：
+#cd /sys/class/leds/此时可以看到led1 led2
+写入1 0 控制灯的亮灭。
+#echo 0 > /sys/class/leds/led1/brightness LED2灭
+#echo 1 > /sys/class/leds/led1/brightness LED2亮 
+#echo 0 > /sys/class/leds/led2/brightness LED3灭
+#echo 1 > /sys/class/leds/led2/brightness LED3亮
+
+咱们板子的led1 和led4 不能控制。

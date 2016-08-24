@@ -1,0 +1,20 @@
+74hc595  (spi 控制)
+0~7
+SDIO ENET1_NRST ENET2_NRST CAN_STBY WIFI_PWN CSI_RST CSI_PWDN LCD_NPWREN
+
+GPIO - 248~255
+
+WIFI_PWN 使能控制
+~# echo 252 >/sys/class/gpio/export
+使能 WIFI （低电平有效）
+~# echo 0 >/sys/class/gpio/gpio252/value
+除能 WIFI 
+~# echo 1 >/sys/class/gpio/gpio252/value
+执行后电流能减少100 多ma
+
+LCD_NPWREN 使能控制
+~# echo 255 >/sys/class/gpio/export
+使能 LCD （低电平有效）
+~# echo 0 >/sys/class/gpio/gpio255/value
+除能 LCD 
+~# echo 1 >/sys/class/gpio/gpio255/value

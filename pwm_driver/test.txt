@@ -1,0 +1,15 @@
+root@imx6ulevk:~# echo 0 > /sys/class/pwm/pwmchip1/export
+root@imx6ulevk:~#
+root@imx6ulevk:~#
+root@imx6ulevk:~# cat /sys/class/pwm/pwmchip1/pwm0/{enable,period,duty_cycle}
+0
+0
+0
+root@imx6ulevk:~#
+root@imx6ulevk:~# echo 1 >/sys/class/pwm/pwmchip1/pwm0/enable
+root@imx6ulevk:~#
+root@imx6ulevk:~# echo 1000 > /sys/class/pwm/pwmchip1/pwm0/period
+root@imx6ulevk:~#
+root@imx6ulevk:~# echo 10 > /sys/class/pwm/pwmchip1/pwm0/duty_cycle
+root@imx6ulevk:~#
+root@imx6ulevk:~# cat /sys/class/pwm/pwmchip1/pwm0/{enable,period,duty_cycle}

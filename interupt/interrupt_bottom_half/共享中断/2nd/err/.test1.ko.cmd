@@ -1,0 +1,1 @@
+cmd_/nfsroot/review_driver/6th_irq/6th_irq_2/2nd/err/test1.ko := /usr/local/arm/4.3.2/bin/arm-linux-ld -EL -r   --build-id -o /nfsroot/review_driver/6th_irq/6th_irq_2/2nd/err/test1.ko /nfsroot/review_driver/6th_irq/6th_irq_2/2nd/err/test1.o /nfsroot/review_driver/6th_irq/6th_irq_2/2nd/err/test1.mod.o
