@@ -1,4 +1,8 @@
+/*
 
+MX6UL_PAD_GPIO1_IO04__PWM3_OUT   0x110b0
+		IO_NAME_ IO function      复用设置
+*/
 Author: jarvis <jarvis@perceptiondigital.com>
 Date:   2016/05/17/17:24:33 +0800
 
